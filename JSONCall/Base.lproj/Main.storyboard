@@ -43,15 +43,33 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="JSON Result will appear here" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="D53-ML-zsW">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <color key="backgroundColor" red="0.50221984449889989" green="1" blue="0.61578017408004815" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="179" id="4El-eX-LLU"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="4El-eX-LLU"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="4El-eX-LLU"/>
+                                    </mask>
+                                </variation>
                             </textView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="SCO-GA-gb2">
+                                <rect key="frame" x="-10" y="-10" width="20" height="20"/>
+                                <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="D53-ML-zsW" secondAttribute="trailing" constant="20" id="2es-mS-pad"/>
+                            <constraint firstItem="4eq-Wz-JBs" firstAttribute="top" secondItem="SCO-GA-gb2" secondAttribute="bottom" constant="8" id="825-sL-nyq"/>
                             <constraint firstItem="D53-ML-zsW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="AK2-Qo-79P"/>
-                            <constraint firstItem="4eq-Wz-JBs" firstAttribute="top" secondItem="D53-ML-zsW" secondAttribute="bottom" constant="8" id="FPJ-h6-jRg"/>
+                            <constraint firstItem="SCO-GA-gb2" firstAttribute="centerX" secondItem="4eq-Wz-JBs" secondAttribute="centerX" id="DdG-sx-H6E"/>
                             <constraint firstItem="4eq-Wz-JBs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WDq-Hn-1so"/>
                             <constraint firstItem="D53-ML-zsW" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="dfI-E9-0wb"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="4eq-Wz-JBs" secondAttribute="bottom" constant="20" id="mj1-dI-Jqc"/>
@@ -60,12 +78,14 @@
                             <mask key="subviews">
                                 <exclude reference="4eq-Wz-JBs"/>
                                 <exclude reference="D53-ML-zsW"/>
+                                <exclude reference="SCO-GA-gb2"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="2es-mS-pad"/>
                                 <exclude reference="AK2-Qo-79P"/>
                                 <exclude reference="dfI-E9-0wb"/>
-                                <exclude reference="FPJ-h6-jRg"/>
+                                <exclude reference="DdG-sx-H6E"/>
+                                <exclude reference="825-sL-nyq"/>
                                 <exclude reference="WDq-Hn-1so"/>
                                 <exclude reference="mj1-dI-Jqc"/>
                             </mask>
@@ -74,18 +94,21 @@
                             <mask key="subviews">
                                 <include reference="4eq-Wz-JBs"/>
                                 <include reference="D53-ML-zsW"/>
+                                <include reference="SCO-GA-gb2"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="2es-mS-pad"/>
                                 <include reference="AK2-Qo-79P"/>
                                 <include reference="dfI-E9-0wb"/>
-                                <include reference="FPJ-h6-jRg"/>
+                                <include reference="DdG-sx-H6E"/>
+                                <include reference="825-sL-nyq"/>
                                 <include reference="WDq-Hn-1so"/>
                                 <include reference="mj1-dI-Jqc"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="SCO-GA-gb2" id="vXv-Om-hPk"/>
                         <outlet property="jsonTextView" destination="D53-ML-zsW" id="BCG-xN-kNk"/>
                     </connections>
                 </viewController>

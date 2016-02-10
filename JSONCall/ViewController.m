@@ -13,7 +13,7 @@
 @end
 
 @implementation ViewController
-@synthesize jsonTextView;
+@synthesize jsonTextView, activityIndicator;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -27,6 +27,8 @@
 }
 
 -(IBAction)getJSONFromURL:(id)sender{
+    
+    [activityIndicator startAnimating];
     
     NSString *URLString = @"http://date.jsontest.com/";
     NSURL *url = [NSURL URLWithString:URLString];
@@ -52,7 +54,10 @@
             }else{
                 NSLog(@"%@",returnedDict);
                 [[NSOperationQueue mainQueue] addOperationWithBlock:^{
-                    jsonTextView.text = returnedDict.debugDescription;
+                    NSString *date = returnedDict[@"date"];
+                    NSString *time = returnedDict[@"time"];
+                    jsonTextView.text = [NSString stringWithFormat:@"Date: %@, \nTime:%@",date,time];
+                    [activityIndicator stopAnimating];
                 }];
 
             }
