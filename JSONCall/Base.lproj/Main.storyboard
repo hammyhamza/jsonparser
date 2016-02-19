@@ -53,7 +53,7 @@
                                 <rect key="frame" x="0.0" y="-216" width="320" height="216"/>
                             </pickerView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="ZzO-4D-geT" firstAttribute="top" secondItem="srP-5e-EaJ" secondAttribute="bottom" constant="8" id="LG2-DU-psy"/>
                             <constraint firstItem="ZzO-4D-geT" firstAttribute="leading" secondItem="kQd-FZ-N5g" secondAttribute="leading" id="PWD-t7-bgQ"/>
@@ -80,7 +80,7 @@
                             </mask>
                         </variation>
                     </view>
-                    <tabBarItem key="tabBarItem" title="PickerView" id="Pfs-gG-O17"/>
+                    <tabBarItem key="tabBarItem" title="PickerView" image="picker" id="Pfs-gG-O17"/>
                     <connections>
                         <outlet property="pickerView" destination="ZzO-4D-geT" id="5KF-7Y-uZd"/>
                     </connections>
@@ -161,7 +161,7 @@
         <scene sceneID="l5y-Oy-ii5">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ywf-UO-LQU" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="TableView" id="0cr-Go-7RF"/>
+                    <tabBarItem key="tabBarItem" title="TableView" image="table" id="0cr-Go-7RF"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="XYh-or-YmE">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -177,4 +177,8 @@
             <point key="canvasLocation" x="106.5" y="346"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="picker" width="21" height="21"/>
+        <image name="table" width="21" height="21"/>
+    </resources>
 </document>
