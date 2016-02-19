@@ -12,6 +12,7 @@
 		6A3D6EDA1C6B36A200D20C1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A3D6ED81C6B36A200D20C1E /* Main.storyboard */; };
 		6A3D6EDC1C6B36A200D20C1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A3D6EDB1C6B36A200D20C1E /* Assets.xcassets */; };
 		6A3D6EDF1C6B36A200D20C1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A3D6EDD1C6B36A200D20C1E /* LaunchScreen.storyboard */; };
+		6AA514461C76DE84004665C8 /* PicerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AA514451C76DE84004665C8 /* PicerViewController.m */; };
 		6AF64EB51C748672006BF81F /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF64EB41C748672006BF81F /* TableViewController.m */; };
 		6AF64EBB1C748A2B006BF81F /* CategoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF64EBA1C748A2B006BF81F /* CategoryTableViewController.m */; };
 /* End PBXBuildFile section */
@@ -25,6 +26,8 @@
 		6A3D6EDB1C6B36A200D20C1E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6A3D6EDE1C6B36A200D20C1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6A3D6EE01C6B36A200D20C1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6AA514441C76DE84004665C8 /* PicerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PicerViewController.h; sourceTree = "<group>"; };
+		6AA514451C76DE84004665C8 /* PicerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PicerViewController.m; sourceTree = "<group>"; };
 		6AF64EB31C748672006BF81F /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		6AF64EB41C748672006BF81F /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		6AF64EB91C748A2B006BF81F /* CategoryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryTableViewController.h; sourceTree = "<group>"; };
@@ -67,6 +70,8 @@
 				6AF64EB41C748672006BF81F /* TableViewController.m */,
 				6AF64EB91C748A2B006BF81F /* CategoryTableViewController.h */,
 				6AF64EBA1C748A2B006BF81F /* CategoryTableViewController.m */,
+				6AA514441C76DE84004665C8 /* PicerViewController.h */,
+				6AA514451C76DE84004665C8 /* PicerViewController.m */,
 				6A3D6ED81C6B36A200D20C1E /* Main.storyboard */,
 				6A3D6EDB1C6B36A200D20C1E /* Assets.xcassets */,
 				6A3D6EDD1C6B36A200D20C1E /* LaunchScreen.storyboard */,
@@ -154,6 +159,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AA514461C76DE84004665C8 /* PicerViewController.m in Sources */,
 				6A3D6ED41C6B36A200D20C1E /* AppDelegate.m in Sources */,
 				6A3D6ED11C6B36A100D20C1E /* main.m in Sources */,
 				6AF64EBB1C748A2B006BF81F /* CategoryTableViewController.m in Sources */,
